@@ -139,4 +139,6 @@ type AutoscalingOptions struct {
 	IgnoredTaints []string
 	// AWSUseStaticInstanceList tells if AWS cloud provider use static instance type list or dynamically fetch from remote APIs.
 	AWSUseStaticInstanceList bool
+	// Enable or disable cordon nodes functionality before terminate during downscale process
+	CordonNodeBeforeTerminate bool
 }
